@@ -71,11 +71,11 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border: 10px outset #0C3071;
+  transition: all 1s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.45) rotate(-360deg);
 }
 .tag {
   background-color: #efefef;
@@ -99,6 +99,20 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
+.experience,
+.hobbies{
+  max-width: 800px;
+}
+
+.hobby_img {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
+ }
+
+
 .card:hover {
   border-color: #0C3071;
 }
@@ -178,6 +192,13 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+  }
+
+  .hobby_img {
+    width: 100%;
+    max-width: 50%;
+    float: left;
+    padding: 0 10px 0 10px;
   }
 
   header {
